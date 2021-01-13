@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/iCode/array/array.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/array/array_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/hello/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/linklist/LinkList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/linklist/LinkList_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +49,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -67,67 +66,71 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Go Test.go test iCode/array">
-    <configuration name="TestArray_Delete in iCode/array" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestLinkList_FindByIndex in iCode/linklist">
+    <configuration name="TestLinkList_DeleteNode in iCode/linklist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/array" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/linklist" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="iCode/array" />
+      <package value="iCode/linklist" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestArray_Delete\E$" />
+      <pattern value="^\QTestLinkList_DeleteNode\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestArray_Find in array_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLinkList_FindByIndex in iCode/linklist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/array" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/iCode/array/array_test.go" />
-      <pattern value="^\QTestArray_Find\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestArray_Insert in array_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/array" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/iCode/array/array_test.go" />
-      <pattern value="^\QTestArray_Insert\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestInsert in array_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/array" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/iCode/array/array_test.go" />
-      <pattern value="^\QTestInsert\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go test iCode/array" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/array" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/linklist" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="iCode/array" />
+      <package value="iCode/linklist" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLinkList_FindByIndex\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLinkList_InsertAfter in iCode/linklist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/linklist" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/linklist" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLinkList_InsertAfter\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLinkList_InsertBefore in iCode/linklist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/linklist" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/linklist" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLinkList_InsertBefore\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLinkList_InsertToTail in iCode/linklist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/linklist" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/linklist" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLinkList_InsertToTail\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test iCode/array" />
-        <item itemvalue="Go Test.TestArray_Delete in iCode/array" />
-        <item itemvalue="Go Test.TestArray_Find in array_test.go" />
-        <item itemvalue="Go Test.TestArray_Insert in array_test.go" />
-        <item itemvalue="Go Test.TestInsert in array_test.go" />
+        <item itemvalue="Go Test.TestLinkList_FindByIndex in iCode/linklist" />
+        <item itemvalue="Go Test.TestLinkList_DeleteNode in iCode/linklist" />
+        <item itemvalue="Go Test.TestLinkList_InsertBefore in iCode/linklist" />
+        <item itemvalue="Go Test.TestLinkList_InsertAfter in iCode/linklist" />
+        <item itemvalue="Go Test.TestLinkList_InsertToTail in iCode/linklist" />
       </list>
     </recent_temporary>
   </component>
@@ -147,46 +150,90 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="561" y="246" key="#Go_Modules" timestamp="1610441235083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="561" y="246" key="#Go_Modules/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441235083" />
+    <state x="485" y="242" width="734" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1610510485825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="242" width="734" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510485825" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610441257402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441257402" />
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1610441381347">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1610541814004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441381347" />
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541814004" />
     <state width="1493" height="313" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1610441381347">
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1610541814004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441381347" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541814004" />
     <state width="1493" height="313" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1610441381346">
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1610541814004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441381346" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541814004" />
     <state width="1493" height="313" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1610441381347">
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1610541814004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441381347" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541814004" />
     <state width="1493" height="313" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1610441458276">
+    <state width="1493" height="281" key="GridCell.Tab.1.bottom" timestamp="1610541564146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441458276" />
-    <state x="1567" y="-12" width="1295" height="735" maximized="true" key="dock-window-1" timestamp="1610441458828">
+    <state width="1493" height="281" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541564146" />
+    <state width="1493" height="281" key="GridCell.Tab.1.center" timestamp="1610541564146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541564146" />
+    <state width="1493" height="281" key="GridCell.Tab.1.left" timestamp="1610541564146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541564146" />
+    <state width="1493" height="281" key="GridCell.Tab.1.right" timestamp="1610541564146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610541564146" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1610510515994">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510515994" />
+    <state x="2034" y="-18" width="1178" height="618" maximized="true" key="dock-window-1" timestamp="1610540788320">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
-    <state x="1567" y="-12" width="1295" height="735" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441458828" />
-    <state x="1980" y="134" width="1187" height="557" key="dock-window-2" timestamp="1610425283869">
+    <state x="2034" y="-18" width="1178" height="618" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610540788320" />
+    <state x="1960" y="187" width="1178" height="618" key="dock-window-2" timestamp="1610510516508">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
-    <state x="1980" y="134" width="1187" height="557" key="dock-window-2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610425283869" />
+    <state x="1960" y="187" width="1178" height="618" key="dock-window-2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510516508" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/iCode/linklist/LinkList.go</url>
+          <line>134</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/iCode/linklist/LinkList_test.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/iCode/linklist/LinkList_test.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
