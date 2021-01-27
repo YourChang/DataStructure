@@ -8,7 +8,7 @@ func BinarySearch(a []int, v int) int {
 
 	low := 0
 	high := n - 1
-	for low <= high {
+	for low <= high { 
 		mid := (low + high) / 2
 		if a[mid] == v {
 			return mid

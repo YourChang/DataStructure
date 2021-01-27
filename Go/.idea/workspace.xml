@@ -30,26 +30,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/Factorial.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/Factorial_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/Fibonacci.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/Fibonacci_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/RangeAll.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Recursion/RangeAll_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/SortInterface/sorting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_1/sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_1/sort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_2/MergeSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_2/MergeSort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_2/QuickSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_2/QuickSort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_3/BucketSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_3/BucketSort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_3/CountSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/Sort_3/CountSort_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/BinarySearch/BinarySearch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/BinarySearch/BinarySearch_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Example/10_recursion/Fibonacci.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/10_recursion/Fibonacci.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Example/13_sorts/BucketSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/13_sorts/BucketSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Example/15_binarysearch/binarysearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/15_binarysearch/binarysearch.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +87,18 @@
       <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\Example\15_binarysearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCountSort in iCode/Sort_3">
+  <component name="RunManager" selected="Go Test.TestBinarySearch in iCode/BinarySearch">
+    <configuration name="TestBinarySearch in iCode/BinarySearch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/BinarySearch" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/BinarySearch" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestBinarySearch\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestBucketSort in iCode/Sort_3" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/src/iCode/Sort_3" />
@@ -123,17 +119,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestCountSort\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMergeSort in Example/12_sorts" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/Example/12_sorts" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="Example/12_sorts" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMergeSort\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMergeSort in iCode/Sort_2 (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -160,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestBinarySearch in iCode/BinarySearch" />
         <item itemvalue="Go Test.TestCountSort in iCode/Sort_3" />
         <item itemvalue="Go Test.TestBucketSort in iCode/Sort_3" />
         <item itemvalue="Go Test.TestMergeSort in iCode/Sort_2 (1)" />
         <item itemvalue="Go Test.TestMergeSort in iCode/Sort_2" />
-        <item itemvalue="Go Test.TestMergeSort in Example/12_sorts" />
       </list>
     </recent_temporary>
   </component>
@@ -208,58 +193,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="242" width="734" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510485825" />
+    <state x="522" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611717457059">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="213" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611717457059" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610441257402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441257402" />
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1611651346978">
+    <state width="1493" height="105" key="GridCell.Tab.0.bottom" timestamp="1611753016932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611651346978" />
+    <state width="1493" height="105" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611753016932" />
     <state width="1493" height="313" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1611651346978">
+    <state width="1493" height="105" key="GridCell.Tab.0.center" timestamp="1611753016932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611651346978" />
+    <state width="1493" height="105" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611753016932" />
     <state width="1493" height="313" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1611651346978">
+    <state width="1493" height="105" key="GridCell.Tab.0.left" timestamp="1611753016932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611651346978" />
+    <state width="1493" height="105" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611753016932" />
     <state width="1493" height="313" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1611651346978">
+    <state width="1493" height="105" key="GridCell.Tab.0.right" timestamp="1611753016932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611651346978" />
+    <state width="1493" height="105" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611753016932" />
     <state width="1493" height="313" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="173" key="GridCell.Tab.1.bottom" timestamp="1611650561323">
+    <state width="1493" height="173" key="GridCell.Tab.1.bottom" timestamp="1611668080184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611650561323" />
-    <state width="1493" height="173" key="GridCell.Tab.1.center" timestamp="1611650561323">
+    <state width="1493" height="173" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611668080184" />
+    <state width="1493" height="173" key="GridCell.Tab.1.center" timestamp="1611668080183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611650561323" />
-    <state width="1493" height="173" key="GridCell.Tab.1.left" timestamp="1611650561323">
+    <state width="1493" height="173" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611668080183" />
+    <state width="1493" height="173" key="GridCell.Tab.1.left" timestamp="1611668080183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611650561323" />
-    <state width="1493" height="173" key="GridCell.Tab.1.right" timestamp="1611650561323">
+    <state width="1493" height="173" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611668080183" />
+    <state width="1493" height="173" key="GridCell.Tab.1.right" timestamp="1611668080183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611650561323" />
+    <state width="1493" height="173" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611668080183" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1610510515994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510515994" />
-    <state x="2022" y="-13" width="1048" height="701" maximized="true" key="dock-window-1" timestamp="1611651352712">
+    <state x="1965" y="-17" width="1035" height="717" maximized="true" key="dock-window-1" timestamp="1611731169628">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
-    <state x="2022" y="-13" width="1048" height="701" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611651352712" />
-    <state x="2033" y="170" width="1048" height="372" key="dock-window-2" timestamp="1611631402129">
+    <state x="1965" y="-17" width="1035" height="717" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611731169628" />
+    <state x="2026" y="121" width="1035" height="724" key="dock-window-2" timestamp="1611753388285">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
-    <state x="2033" y="170" width="1048" height="372" key="dock-window-2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611631402129" />
+    <state x="2026" y="121" width="1035" height="724" key="dock-window-2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1611753388285" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611650588652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
