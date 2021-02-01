@@ -11,12 +11,11 @@ import (
 @Author: lichang
 */
 
-type TreeNode struct{
+type TreeNode struct {
 	value int
 	right *TreeNode
-	left *TreeNode
+	left  *TreeNode
 }
-
 
 // 通过前序和中序序列生成二叉树
 func PreIn2Tree(pre, in []int) *TreeNode {
@@ -50,14 +49,14 @@ func PreIn2Tree(pre, in []int) *TreeNode {
 
 func getIndex(arr []int, f int) int {
 	for i, v := range arr {
-		if v == f{
+		if v == f {
 			return i
 		}
 	}
 	return -1
 }
 
-func  PreOrder(root *TreeNode, visit func(interface{})){
+func PreOrder(root *TreeNode, visit func(interface{})) {
 	if root == nil {
 		return
 	}
@@ -68,7 +67,7 @@ func  PreOrder(root *TreeNode, visit func(interface{})){
 }
 
 // 先序遍历非递归
-func PreOrderNotR(root *TreeNode, visit func(interface{})){
+func PreOrderNotR(root *TreeNode, visit func(interface{})) {
 	if root == nil {
 		return
 	}
@@ -86,7 +85,7 @@ func PreOrderNotR(root *TreeNode, visit func(interface{})){
 	}
 }
 
-func InOrder(root *TreeNode, visit func(interface{})){
+func InOrder(root *TreeNode, visit func(interface{})) {
 	if root == nil {
 		return
 	}
@@ -97,11 +96,11 @@ func InOrder(root *TreeNode, visit func(interface{})){
 }
 
 // 中序遍历非递归
-func InOrderNotR(root *TreeNode, visit func(interface{})){
+func InOrderNotR(root *TreeNode, visit func(interface{})) {
 	if root == nil {
 		return
 	}
-	var s Stack.ArrayStack
+	var s *Stack.ArrayStack = Stack.NewArrayStack()
 	p := root
 	for !s.IsEmpty() {
 		if p != nil {
@@ -115,7 +114,7 @@ func InOrderNotR(root *TreeNode, visit func(interface{})){
 	}
 }
 
-func PostOrder(root *TreeNode, visit func(interface{})){
+func PostOrder(root *TreeNode, visit func(interface{})) {
 	if root == nil {
 		return
 	}
@@ -124,4 +123,3 @@ func PostOrder(root *TreeNode, visit func(interface{})){
 	PostOrder(root.right, visit)
 	visit(root.value)
 }
-

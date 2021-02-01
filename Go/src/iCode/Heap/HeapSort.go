@@ -1,18 +1,14 @@
-package heap
+package Heap
 
-//build a heap
-func buidHeap(a []int, n int) {
-
-	//heapify from the last parent node
+func buildHeap(a []int, n int) {
 	for i := n / 2; i >= 1; i-- {
 		heapifyUpToDown(a, i, n)
 	}
-
 }
 
 //sort by ascend, a index begin from 1, has n elements
 func sort(a []int, n int) {
-	buidHeap(a, n)
+	buildHeap(a, n)
 
 	k := n
 	for k >= 1 {
@@ -45,10 +41,3 @@ func heapifyUpToDown(a []int, top int, count int) {
 	}
 
 }
-
-//swap two elements
-//func swap(a []int, i int, j int) {
-//	tmp := a[i]
-//	a[i] = a[j]
-//	a[j] = tmp
-//}

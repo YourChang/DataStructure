@@ -23,7 +23,7 @@ var tcs = []struct {
 	// 可以有多个 testCase
 }
 
-func Test_preOrderTraversal(t *testing.T) {
+func Test_PreOrder(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 
@@ -32,30 +32,16 @@ func Test_preOrderTraversal(t *testing.T) {
 	}
 }
 
-//func Test_inOrderTraversal(t *testing.T) {
-//	ast := assert.New(t)
-//
-//	for _, tc := range tcs {
-//		fmt.Printf("~~%v~~\n", tc)
-//
-//		root := PreIn2Tree(tc.pre, tc.in)
-//		ast.Equal(tc.in, inOrderTraversal(root), "输入:%v", tc)
-//	}
-//}
-//
-//func Test_postOrderTraversal(t *testing.T) {
-//	ast := assert.New(t)
-//
-//	for _, tc := range tcs {
-//		fmt.Printf("~~%v~~\n", tc)
-//
-//		root := PreIn2Tree(tc.pre, tc.in)
-//		ast.Equal(tc.post, postOrderTraversal(root), "输入:%v", tc)
-//	}
-//}
+func Test_InOrder(t *testing.T) {
 
-func Visit(v interface{}){
-	fmt.Printf("%v\t", v)
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+
+		root := PreIn2Tree(tc.pre, tc.in)
+		InOrderNotR(root, Visit)
+	}
 }
 
-
+func Visit(v interface{}) {
+	fmt.Printf("%v\t", v)
+}

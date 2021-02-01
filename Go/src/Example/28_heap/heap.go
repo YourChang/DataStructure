@@ -48,11 +48,11 @@ func (heap *Heap) removeMax() {
 	heap.count--
 
 	//heapify from up to down
-	heapifyUpToDown(heap.a, heap.count)
+	HeapifyUpToDown(heap.a, heap.count)
 }
 
 //heapify
-func heapifyUpToDown(a []int, count int) {
+func HeapifyUpToDown(a []int, count int) {
 
 	for i := 1; i <= count/2; {
 
