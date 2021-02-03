@@ -17,3 +17,7 @@ func (q *intQueue) pop() int {
 func (q *intQueue) isEmpty() bool {
 	return len(q.queue) == 0
 }
+
+func (q *intQueue) getTop() int {
+	return q.queue[0]
+}
