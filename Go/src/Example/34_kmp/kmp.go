@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt" 
+	"fmt"
 )
 
 func getNexts(pattern string) []int {
@@ -11,14 +11,14 @@ func getNexts(pattern string) []int {
 		nexts[index] = -1
 	}
 
-	for i := 1; i < m - 1; i++ {
-		j := nexts[i - 1]
+	for i := 1; i < m-1; i++ {
+		j := nexts[i-1] // 借助nexts[i-1]求nexts[i]
 
-		for pattern[j + 1] != pattern[i] && j >= 0 {
-			j = nexts[j]
+		for pattern[j+1] != pattern[i] && j >= 0 {
+			j = nexts[j] //
 		}
 
-		if pattern[j + 1] == pattern[i] {
+		if pattern[j+1] == pattern[i] {
 			j += 1
 		}
 
@@ -40,11 +40,11 @@ func findByKMP(s string, pattern string) int {
 	j := 0
 	for i := 0; i < n; i++ {
 		for j > 0 && s[i] != pattern[j] {
-			j = nexts[j - 1] + 1
+			j = nexts[j-1] + 1
 		}
 
 		if s[i] == pattern[j] {
-			if j == m - 1 {
+			if j == m-1 {
 				return i - m + 1
 			}
 			j += 1
@@ -54,7 +54,7 @@ func findByKMP(s string, pattern string) int {
 	return -1
 }
 
-func main(){
+func main() {
 	s := "abc abcdab abcdabcdabde"
 	pattern := "bcdabd"
 	fmt.Println(findByKMP(s, pattern)) //16

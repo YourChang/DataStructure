@@ -29,14 +29,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="add Graph">
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/BFsearch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/BFsearch_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/BMsearch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/BMsearch_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/RKsearch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCode/string/RKsearch_test.go" afterDir="false" />
+    <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="add string">
+      <change afterPath="$PROJECT_DIR$/src/iCode/string/KMP.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/string/KMP_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Example/34_kmp/kmp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/34_kmp/kmp.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\Example\15_binarysearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestBMSearch in iCode/string">
+  <component name="RunManager" selected="Go Test.TestKMP in iCode/string">
     <configuration name="TestBFSearch in iCode/string" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/src/iCode/string" />
@@ -113,17 +110,6 @@
       <pattern value="^\QTestBMSearch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGraph_BFSMinDistance in iCode/Graph" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/Graph" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="iCode/Graph" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGraph_BFSMinDistance\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestGraph_DFSTraverse in iCode/Graph" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/src/iCode/Graph" />
@@ -133,6 +119,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestGraph_DFSTraverse\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestKMP in iCode/string" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/string" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/string" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestKMP\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRKSearch in iCode/string" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -148,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestKMP in iCode/string" />
         <item itemvalue="Go Test.TestBMSearch in iCode/string" />
         <item itemvalue="Go Test.TestRKSearch in iCode/string" />
         <item itemvalue="Go Test.TestBFSearch in iCode/string" />
         <item itemvalue="Go Test.TestGraph_DFSTraverse in iCode/Graph" />
-        <item itemvalue="Go Test.TestGraph_BFSMinDistance in iCode/Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add Graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Graph" />
+    <MESSAGE value="add string" />
+    <option name="LAST_COMMIT_MESSAGE" value="add string" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="246" key="#Go_Modules" timestamp="1610441235083">
@@ -206,54 +204,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441257402" />
-    <state width="1493" height="247" key="GridCell.Tab.0.bottom" timestamp="1612429936160">
+    <state width="1493" height="334" key="GridCell.Tab.0.bottom" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612429936160" />
+    <state width="1493" height="334" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
     <state width="1493" height="313" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="247" key="GridCell.Tab.0.center" timestamp="1612429936159">
+    <state width="1493" height="334" key="GridCell.Tab.0.center" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612429936159" />
+    <state width="1493" height="334" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
     <state width="1493" height="313" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="247" key="GridCell.Tab.0.left" timestamp="1612429936159">
+    <state width="1493" height="334" key="GridCell.Tab.0.left" timestamp="1612430142700">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612429936159" />
+    <state width="1493" height="334" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142700" />
     <state width="1493" height="313" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="247" key="GridCell.Tab.0.right" timestamp="1612429936160">
+    <state width="1493" height="334" key="GridCell.Tab.0.right" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="247" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612429936160" />
+    <state width="1493" height="334" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
     <state width="1493" height="313" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="334" key="GridCell.Tab.1.bottom" timestamp="1612424770256">
+    <state width="1493" height="334" key="GridCell.Tab.1.bottom" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612424770256" />
-    <state width="1493" height="334" key="GridCell.Tab.1.center" timestamp="1612424770256">
+    <state width="1493" height="334" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
+    <state width="1493" height="334" key="GridCell.Tab.1.center" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612424770256" />
-    <state width="1493" height="334" key="GridCell.Tab.1.left" timestamp="1612424770256">
+    <state width="1493" height="334" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
+    <state width="1493" height="334" key="GridCell.Tab.1.left" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612424770256" />
-    <state width="1493" height="334" key="GridCell.Tab.1.right" timestamp="1612424770256">
+    <state width="1493" height="334" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
+    <state width="1493" height="334" key="GridCell.Tab.1.right" timestamp="1612430142701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612424770256" />
+    <state width="1493" height="334" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612430142701" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1610510515994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610510515994" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612182689343">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612429967646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612182689343" />
-    <state x="1920" y="0" width="1091" height="735" maximized="true" key="dock-window-1" timestamp="1612421923213">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612429967646" />
+    <state x="1920" y="0" width="1091" height="735" maximized="true" key="dock-window-1" timestamp="1612510416746">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
-    <state x="1920" y="0" width="1091" height="735" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612421923213" />
+    <state x="1920" y="0" width="1091" height="735" maximized="true" key="dock-window-1/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612510416746" />
     <state x="2043" y="183" width="1091" height="735" key="dock-window-2" timestamp="1612421923214">
       <screen x="1920" y="0" width="1280" height="687" />
     </state>
