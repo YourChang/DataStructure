@@ -9,16 +9,16 @@ package TrieTree
 */
 
 type Trie struct {
-	data      rune
-	children  []Trie
-	isEndChar bool
+	Data      rune
+	Children  []*Trie
+	IsEndChar bool
 }
 
 func NewTrie() *Trie {
 	return &Trie{
-		data:      '/',
-		children:  make([]Trie, 26),
-		isEndChar: false,
+		Data:      '/',
+		Children:  make([]*Trie, 26),
+		IsEndChar: false,
 	}
 }
 
@@ -26,25 +26,25 @@ func (trie *Trie) Insert(str string) {
 	var t *Trie = trie
 	for _, v := range str {
 		index := v - 'a'
-		if t.children[index].data == 0 {
-			t.children[index].data = v
-			t.children[index].children = make([]Trie, 26)
+		if t.Children[index] == nil {
+			t.Children[index] = NewTrie()
+			t.Children[index].Data = v
 		}
-		t = &t.children[index]
+		t = t.Children[index]
 	}
-	t.isEndChar = true
+	t.IsEndChar = true
 }
 
 func (trie *Trie) Find(pattern string) bool {
 	var t *Trie = trie
 	for _, v := range pattern {
 		index := v - 'a'
-		if t.children[index].data == 0 {
+		if t.Children[index] == nil {
 			return false
 		}
-		t = &t.children[index]
+		t = t.Children[index]
 	}
-	if t.isEndChar == false {
+	if t.IsEndChar == false {
 		return false
 	}
 	return true
