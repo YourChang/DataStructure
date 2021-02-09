@@ -20,6 +20,12 @@ type Ac struct {
 	length int
 }
 
+//type Ac struct {
+//	TrieTree.Trie
+//	fail *Ac
+//	length int
+//}
+
 // 类似KMP，通过上一层的fail得出当前层的fail
 func (ac *Ac) BuildFailPointer() {
 	var queue *Queue.ArrayQueue = Queue.NewArrayQueue(10)
