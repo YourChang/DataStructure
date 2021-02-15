@@ -29,7 +29,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="Happy New Year:)" />
+    <list default="true" id="0ce96fc5-c4b5-4219-b791-fa1aa99c0bab" name="Default Changelist" comment="Happy New Year:)">
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/Coin/coin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/Coin/coin_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/IncSeq/IncSeq.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/IncSeq/IncSeq_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/minDist/minDistDp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iCode/DynamicProgramming/minDist/minDistDp_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,13 +84,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\iCode\DynamicProgramming\IncSeq" />
+      <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\iCode\DynamicProgramming\minDist" />
       <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\iCode\SkipList" />
       <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\Example\11_sorts" />
       <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\Example\10_recursion" />
-      <recent name="C:\Users\Leang\Workbench\DataStructure\Go\src\Example\15_binarysearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestEightQueen in iCode/BackTracking">
+  <component name="RunManager" selected="Go Test.TestIncSeq in iCode/DynamicProgramming/IncSeq">
+    <configuration name="Test in iCode/DynamicProgramming/Coin" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/DynamicProgramming/Coin" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="iCode/DynamicProgramming/Coin" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestAc_Match in iCode/Aho-Corasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/src/iCode/Aho-Corasick" />
@@ -105,46 +125,35 @@
       <pattern value="^\QTestEightQueen\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNewTrie in iCode/Trie Tree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIncSeq in iCode/DynamicProgramming/IncSeq" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/Trie Tree" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/DynamicProgramming/IncSeq" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="iCode/Trie Tree" />
+      <package value="iCode/DynamicProgramming/IncSeq" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewTrie\E$" />
+      <pattern value="^\QTestIncSeq\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNewTrie in iCode/TrieTree (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMinDistDp in iCode/DynamicProgramming/minDist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/TrieTree" />
+      <working_directory value="$PROJECT_DIR$/src/iCode/DynamicProgramming/minDist" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="iCode/TrieTree" />
+      <package value="iCode/DynamicProgramming/minDist" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewTrie\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNewTrie in iCode/TrieTree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/src/iCode/TrieTree" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="iCode/TrieTree" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewTrie\E$" />
+      <pattern value="^\QTestMinDistDp\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestIncSeq in iCode/DynamicProgramming/IncSeq" />
+        <item itemvalue="Go Test.Test in iCode/DynamicProgramming/Coin" />
+        <item itemvalue="Go Test.TestMinDistDp in iCode/DynamicProgramming/minDist" />
         <item itemvalue="Go Test.TestEightQueen in iCode/BackTracking" />
         <item itemvalue="Go Test.TestAc_Match in iCode/Aho-Corasick" />
-        <item itemvalue="Go Test.TestNewTrie in iCode/TrieTree (1)" />
-        <item itemvalue="Go Test.TestNewTrie in iCode/TrieTree" />
-        <item itemvalue="Go Test.TestNewTrie in iCode/Trie Tree" />
       </list>
     </recent_temporary>
   </component>
@@ -205,42 +214,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1610441257402" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1612860592673">
+    <state width="1493" height="179" key="GridCell.Tab.0.bottom" timestamp="1613396655065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
+    <state width="1493" height="179" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396655065" />
     <state width="1493" height="313" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1612860592672">
+    <state width="1493" height="179" key="GridCell.Tab.0.center" timestamp="1613396655064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592672" />
+    <state width="1493" height="179" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396655064" />
     <state width="1493" height="313" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1612860592672">
+    <state width="1493" height="179" key="GridCell.Tab.0.left" timestamp="1613396655064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592672" />
+    <state width="1493" height="179" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396655064" />
     <state width="1493" height="313" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1612860592673">
+    <state width="1493" height="179" key="GridCell.Tab.0.right" timestamp="1613396655064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
+    <state width="1493" height="179" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396655064" />
     <state width="1493" height="313" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@1920.0.1280.687" timestamp="1610373657580" />
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1612860592673">
+    <state width="1493" height="80" key="GridCell.Tab.1.bottom" timestamp="1613396565756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
-    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1612860592673">
+    <state width="1493" height="80" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396565756" />
+    <state width="1493" height="80" key="GridCell.Tab.1.center" timestamp="1613396565755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
-    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1612860592673">
+    <state width="1493" height="80" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396565755" />
+    <state width="1493" height="80" key="GridCell.Tab.1.left" timestamp="1613396565755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
-    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1612860592673">
+    <state width="1493" height="80" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396565755" />
+    <state width="1493" height="80" key="GridCell.Tab.1.right" timestamp="1613396565755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1612860592673" />
+    <state width="1493" height="80" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1613396565755" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1610510515994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -321,12 +330,17 @@
           <line>5</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/iCode/DynamicProgramming/minDist/minDistDp_test.go</url>
+          <line>6</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/iCode/DynamicProgramming/IncSeq/IncSeq_test.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="GoTestRunConfiguration">
-        <watch expression="res" language="go" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
